@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://minskitchen.vn/sitemap.xml

@@ -1,0 +1,1 @@
+<a  class="btn btn-sm {{ $data->status==1 ? 'btn-success': 'btn-warning lb-change-status-nhap-kho' }}" data-value="{{ $data->status }}" >{{ $data->status == 1 ? 'Đã thanh toán' : 'Chưa thanh toán' }}</a>

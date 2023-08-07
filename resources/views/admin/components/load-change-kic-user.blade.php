@@ -1,0 +1,1 @@
+<a  class="btn btn-sm {{ $data->kic==1 ? 'btn-success' : 'btn-warning lb-kic-user' }}" data-value="{{$data->kic}}" data-type="{{$type?$type:''}}"  style="width:80px;">{{$data->kic==1 ? 'Đã KIC': 'Chờ KIC' }}</a>

@@ -1,0 +1,43 @@
+@import "./base.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1160px;
+}

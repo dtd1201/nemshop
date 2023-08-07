@@ -1,0 +1,147 @@
+@import "./base.scss";
+
+@media (max-width: 1280px) {
+  .main-title {
+    font-size: 28px;
+  }
+}
+@media(max-width:1024px){
+  .main-rte {
+    .rte {
+      .rte-recruiment_left {
+        width: calc(100% - 315px);
+     }
+     .rte-recruiment_right {
+      flex: 0 0 315px;
+      max-width: 315px;
+      .offer-job {
+        margin-top: 0;
+      }
+     }
+    }
+  } 
+  .recruiment-form {
+    form {
+      .form-mail-phone {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #header {
+    .container {
+      .header-nav-mobile {
+        z-index: 10;
+        background-color: $white;
+        width: 45px;
+        display: block;
+        text-align: right;
+      }
+      .header-nav {
+        display: none;
+      }
+    }
+  }
+  .sub-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .recruitment-content-wrapper {
+    .recruitment-content-container {
+      .recruitment-content-list {
+        .recruitment-content-item {
+          .recruitment-content-item-title {
+            font-size: 18px;
+          }
+
+          .recruitment-content-item-information
+            .recruitment-content-item-information-text
+            .item
+            .text {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 768px) {
+  .recruitment-content-wrapper {
+    .recruitment-content-container {
+      margin-top: 50px;
+    }
+  }
+
+  #footer {
+    margin-top: 50px;
+    .top {
+      padding: unset;
+      background-image: none;
+      .cta-container,
+      .information-container {
+        margin: auto;
+      }
+      .col-12:first-child {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: $yellow-1;
+      }
+      .col-12:last-child {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: $black;
+      }
+    }
+    .copyrights {
+      border-top: 1px solid $gray;
+      .copyrights-text {
+        p {
+          text-align: center;
+        }
+      }
+      .social-container {
+        justify-content: center;
+
+        margin: 20px 0 0;
+
+        max-width: 100%;
+      }
+    }
+  }
+
+   //RECRUIMENT
+  .main-rte {
+    .rte {
+      .rte-recruiment_left {
+        width: 100%;
+     }
+     .rte-recruiment_right {
+      flex: 0 0 100%;
+      max-width: 100%;
+     }
+    }
+  } 
+}
+@media (max-width: 576px) {
+  // START ABOUT
+  #home-about {
+    margin-top: 50px;
+  }
+  // END ABOUT
+
+  //RECRUIMENT
+  .recruiment-form {
+    margin-bottom: 70px;
+    form {
+      .form-mail-phone {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+    }
+  } 
+}

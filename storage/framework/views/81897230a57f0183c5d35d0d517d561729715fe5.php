@@ -1,0 +1,2 @@
+<a  class="btn btn-sm <?php echo e($data->active==1?'btn-success':'btn-warning lb-active-user'); ?> " data-value="<?php echo e($data->active); ?>" data-type="<?php echo e($type?$type:''); ?>"  style="width:80px;"><?php echo e($data->active==1?'Active':'Disable'); ?></a>
+<?php /**PATH D:\xampp\htdocs\php-laravel\web_tinh_toan\project_1\resources\views/admin/components/load-change-active-user.blade.php ENDPATH**/ ?>

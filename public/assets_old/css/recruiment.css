@@ -1,0 +1,187 @@
+/*css details job*/
+.breadcrum {
+  margin-top: 69px;
+}
+.breadcrum img {
+  object-fit: cover;
+  aspect-ratio: 1920/456;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .breadcrum img {
+    height: 380px;
+  }
+}
+
+.main-rte .rte {
+  margin-top: 70px;
+}
+.main-rte .rte .rte-recruiment_left {
+  width: calc(100% - 417px);
+}
+.main-rte .rte .rte-recruiment_right {
+  flex: 0 0 417px;
+  max-width: 417px;
+}
+
+.detail-job .title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.detail-job .detail-job_sum {
+  margin: 50px 0 60px 40px;
+  color: #616161;
+  list-style: disc;
+  line-height: 28px;
+}
+.detail-job .detail-job_sum li {
+  margin-bottom: 20px;
+}
+
+.recruitment-content-wrapper {
+  margin-top: 0;
+}
+.recruitment-content-wrapper .recruitment-content-container {
+  margin-top: 10px;
+}
+
+#footer {
+  margin-top: 78px;
+}
+
+/*css form*/
+.offer-job {
+  padding: 30px;
+  margin-top: 76px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin-bottom: 23px;
+}
+.offer-job .offer-job_item b {
+  font-size: 18px;
+  line-height: 28px;
+}
+.offer-job .offer-job_item p {
+  color: #616161;
+  margin: 20px 0;
+}
+
+.recruiment-form .title-form {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.recruiment-form form input,
+.recruiment-form form select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #999999;
+  margin-bottom: 12px;
+}
+.recruiment-form form input:focus-visible,
+.recruiment-form form select:focus-visible {
+  outline: none;
+  border: 1px solid #ee1b24;
+}
+.recruiment-form form select {
+  -webkit-appearance: none;
+  appearance: none;
+  color: #999999;
+}
+.recruiment-form form select option {
+  color: #000;
+}
+.recruiment-form form .upload-file {
+  height: 75px;
+  border-radius: 5px;
+  border: 1px dashed #c2c2c2;
+  margin-bottom: 12px;
+  padding: 15px 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.recruiment-form form .upload-file input {
+  display: none;
+}
+.recruiment-form form .upload-file span {
+  display: block;
+  color: #999999;
+  font-size: 12px;
+}
+.recruiment-form form .upload-file label {
+  cursor: pointer;
+  color: #616161;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  height: 100%;
+}
+.recruiment-form form textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 129px;
+  border: 1px solid #c2c2c2;
+}
+.recruiment-form form textarea:focus-visible {
+  outline: none;
+  border: 1px solid #ee1b24;
+}
+.recruiment-form form .form-mail-phone {
+  display: flex;
+  gap: 12px;
+}
+.recruiment-form form ::placeholder {
+  color: #999999;
+}
+.recruiment-form form .button {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000000;
+  margin-top: 40px;
+}
+.recruiment-form form .button:hover {
+  background: #373737;
+}
+
+.toast-offer {
+  width: 100%;
+  max-width: 393px;
+  border-radius: 5px;
+  padding: 30px 28px;
+  background: #d7f8da;
+  margin-top: 20px;
+}
+.toast-offer .box-toast {
+  display: flex;
+}
+.toast-offer .box-toast .box-toast_icon {
+  background: #20b92f;
+  display: inline-flex;
+  flex: 0 0 47px;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+}
+.toast-offer .box-toast .box-toast_messenger {
+  margin-left: 14px;
+}
+
+.toast-fail {
+  background: #fcd0d2;
+}
+.toast-fail .box-toast .box-toast_icon {
+  background: #ee1b24;
+}
