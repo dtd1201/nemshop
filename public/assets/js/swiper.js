@@ -36,3 +36,24 @@ const swiperCarousel = new Swiper("#home-carousel .swiper", {
     el: ".swiper-pagination",
   },
 });
+
+const swiperClient = new Swiper("#home-client .swiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: "10px",
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: "20px",
+    },
+  },
+});
+

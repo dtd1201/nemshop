@@ -1,3 +1,5 @@
+@import '../scss/base.scss';
+
 /*css details job*/
 .breadcrum {
     margin-top: 69px;
@@ -23,11 +25,11 @@
   }
   .detail-job_sum {
     margin: 50px 0 60px 40px;
-    color: #616161;
+    color: $gray-2;
     list-style: disc;
     line-height: 28px;
     li {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
   }
 }
@@ -54,8 +56,11 @@
       line-height: 28px;
     }
     p {
-      color: #616161;
-      margin: 20px 0;
+      color: $gray-2;
+      margin: 10px 0;
+    }
+    .icon {
+      margin-top: 10px;
     }
   }
 }
@@ -72,19 +77,19 @@
       border-radius: 5px;
       padding: 10px 20px;
       font-size: 16px;
-      border: 1px solid #999999;
+      border: 1px solid $gray;
       margin-bottom: 12px;
       &:focus-visible {
         outline: none;
-        border: 1px solid #ee1b24;
+        border: 1px solid $black;
       }
     }
     select {
       -webkit-appearance: none;
       appearance: none;
-      color: #999999;
+      color: $gray;
       option {
-        color: #000;
+        color:$black;
       }
     }
     .upload-file {
@@ -101,12 +106,12 @@
       }
       span {
         display: block;
-        color: #999999;
+        color: $gray;
         font-size: 12px;
       }
       label {
         cursor: pointer;
-        color: #616161;
+        color: $gray-2;
         width: 100%;
         position: absolute;
         left: 0;
@@ -132,7 +137,7 @@
       gap: 12px;
     }
     ::placeholder {
-      color: #999999;
+      color: $gray;
     }
     .button {
       padding: 15px 30px;
@@ -140,7 +145,7 @@
       font-size: 16px;
       border-radius: 5px;
       color: #fff;
-      background-color: #000000;
+      background-color: $black000;
       margin-top: 40px;
       &:hover {
         background: #373737;

@@ -16,13 +16,6 @@
 .main-rte .rte {
   margin-top: 70px;
 }
-.main-rte .rte .rte-recruiment_left {
-  width: calc(100% - 417px);
-}
-.main-rte .rte .rte-recruiment_right {
-  flex: 0 0 417px;
-  max-width: 417px;
-}
 
 .detail-job .title {
   font-size: 32px;
@@ -184,4 +177,11 @@
 }
 .toast-fail .box-toast .box-toast_icon {
   background: #ee1b24;
+}
+
+.recruitment-content-wrapper {
+  margin-top: 10px !important;
+}
+.recruitment-content-wrapper .recruitment-content-container {
+  margin-top: 10px !important;
 }

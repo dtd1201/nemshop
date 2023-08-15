@@ -56,6 +56,7 @@ main {
   border-radius: 5px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   padding: 25px 27px;
+  gap: 26px;
   height: 100%;
   transition: all ease 0.5s;
   display: flex;
@@ -64,6 +65,9 @@ main {
 }
 .recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover {
   background-color: #000;
+}
+.recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover .recruitment-content-item-information .button {
+  color: #000;
 }
 .recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover path,
 .recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover rect {
@@ -249,6 +253,7 @@ main {
 }
 #footer .top .cta-container .button {
   display: block;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 30px;
   padding: 10px 50px;
@@ -436,6 +441,7 @@ main {
 }
 #home-advantage .main-title {
   margin: 0 auto;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #home-advantage .advantage-content {
@@ -472,10 +478,24 @@ main {
   margin-top: 104px;
 }
 #home-carousel .swiper .swiper-wrapper .swiper-slide-prev {
-  transform: translateX(31%);
+  transform: translateX(55%);
 }
 #home-carousel .swiper .swiper-wrapper .swiper-slide-next {
-  transform: translateX(-31%);
+  transform: translateX(-55%);
+}
+#home-carousel .swiper .swiper-wrapper .swiper-slide-active {
+  position: relative;
+  z-index: 2;
+  transition: all ease 1s;
+}
+#home-carousel .swiper .swiper-wrapper .swiper-slide-active .carousel-item-img {
+  transition: all ease 1s;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+}
+#home-carousel .swiper .swiper-wrapper .swiper-slide-next,
+#home-carousel .swiper .swiper-wrapper .swiper-slide-prev {
+  transition: all ease 3s;
 }
 #home-carousel .swiper .swiper-wrapper .swiper-slide-next .carousel-item-img::after,
 #home-carousel .swiper .swiper-wrapper .swiper-slide-prev .carousel-item-img::after {
@@ -486,11 +506,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all ease 0.75s;
+  transition: all ease 1s;
 }
 #home-carousel .swiper .swiper-wrapper .swiper-slide .carousel-item-img {
-  border-right: 10px solid #fff;
-  border-left: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
   max-width: 1320px;
   width: 100%;
   height: 500px;
@@ -511,12 +531,11 @@ main {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  transition: all ease 0.75s;
+  transition: all ease 1s;
 }
 #home-carousel .swiper .swiper-wrapper .swiper-slide .carousel-item-img img {
-  width: 120%;
   transform: skewX(18deg);
-  transition: all ease 0.75s;
+  transition: all ease 1s;
 }
 #home-carousel .swiper .swiper-button-prev::after,
 #home-carousel .swiper .swiper-button-next::after {
@@ -549,6 +568,7 @@ main {
   margin-top: 104px;
 }
 #home-recruitment .title-wrapper .main-title {
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   margin-bottom: 24px;
@@ -558,6 +578,32 @@ main {
   line-height: 30px;
   font-weight: 300;
   text-align: center;
+}
+
+#home-client {
+  margin-top: 100px;
+}
+#home-client .main-title {
+  text-align: center;
+}
+#home-client .client-slide {
+  height: 100%;
+  margin-top: 50px;
+}
+#home-client .client-slide .client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+#home-client .client-slide .client-item img {
+  width: 100%;
+}
+#home-client .swiper-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1280px) {
@@ -589,7 +635,8 @@ main {
   }
   #home-banner .banner-img img {
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #home-about .container::after {
     content: unset;

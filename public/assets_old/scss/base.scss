@@ -92,7 +92,7 @@ main {
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 
         padding: 25px 27px;
-
+        gap: 26px;
         height: 100%;
 
         transition: all ease 0.5s;
@@ -103,7 +103,11 @@ main {
 
         &:hover {
           background-color: $black;
-
+          .recruitment-content-item-information {
+            .button {
+              color:#000;
+            }
+          }
           path,
           rect {
             fill: $white;
@@ -240,9 +244,55 @@ main {
     .header-nav-mobile {
       display: none;
     }
+    .close-button {
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+    }
   }
 }
 
+.nav-mobile {
+  position: absolute;
+  right: 0;
+  top: 69px;
+  z-index: 20;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: calc(100vh - 69px);
+  .nav-mobile_show {
+    background: #fff;
+    height: 100%;
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+    flex: 0 0 80%;
+    padding: 20px;
+}
+.nav-mobile_fade {
+  background: #000;
+  width: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+  .nav-mobile_main {
+    flex-wrap: wrap;
+    a {
+      display: block;
+      padding: 20px 0;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  .nav-mobile_hotline {
+    padding: 20px 0;
+     svg {
+      vertical-align: middle;
+    }
+  }
+}
 // END HEADER
 
 // START FOOTER

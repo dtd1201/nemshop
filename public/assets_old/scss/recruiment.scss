@@ -13,13 +13,6 @@
 .main-rte {
   .rte {
     margin-top: 70px;
-    .rte-recruiment_left {
-        width: calc(100% - 417px);
-    }
-    .rte-recruiment_right {
-        flex: 0 0 417px;
-        max-width: 417px;
-    }
   }
 }
 .detail-job {
@@ -185,5 +178,11 @@
     .box-toast_icon {
       background: #ee1b24;
     }
+  }
+}
+.recruitment-content-wrapper  {
+  margin-top: 10px !important;
+  .recruitment-content-container {
+    margin-top: 10px !important;
   }
 }

@@ -222,6 +222,26 @@
         </section>
         <?php endif; ?>
       <!-- END RECRUITMENT -->
+      <?php if($doi_tac && $doi_tac->childs->count()>0): ?>
+      <section id="home-client">
+        <div class="container">
+          <h2 class="main-title"><?php echo e($doi_tac->name); ?></h2>
+          <article class="client-slide">
+            <div class="swiper swiper-no-swiping">
+              <div class="swiper-wrapper">
+                <?php $__currentLoopData = $doi_tac->childs()->where('active', 1)->orderBy('order')->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <div class="swiper-slide">
+                  <div class="client-item">
+                    <img src="<?php echo e(asset($item->image_path)); ?>" alt="<?php echo e($item->name); ?>" />
+                  </div>
+                </div>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <?php endif; ?>
     </main>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js'); ?>

@@ -121,10 +121,12 @@ class HomeController extends Controller
         $about_us = $this->categoryPost->where('active', 1)->find(13);
         $NEM = $this->setting->with('childs.childs')->where('active', 1)->find(400);
         $tuyen_dung = $this->categoryPost->where('active', 1)->find(1);
+        $doi_tac = $this->setting->where('active', 1)->find(432);
         return view('frontend.pages.home', [
             'tuyen_dung' => $tuyen_dung,
             'about_us' => $about_us,
             'NEM' => $NEM,
+            'doi_tac' => $doi_tac,
             'listCateHot' => $listCateHot,
             'postsHot'  => $postsHot,
             'postNew' => $postNew,

@@ -222,19 +222,30 @@
   margin-top: 104px;
 
   .swiper {
-    // overflow: visible;
-
     .swiper-wrapper {
       .swiper-slide-prev {
-        transform: translateX(31%);
+        transform: translateX(55%);
       }
 
       .swiper-slide-next {
-        transform: translateX(-31%);
+        transform: translateX(-55%);
+      }
+
+      .swiper-slide-active {
+        position: relative;
+        z-index: 2;
+        transition: all ease 1s;
+        .carousel-item-img {
+          transition: all ease 1s;
+          border-left: 10px solid $white;
+          border-right: 10px solid $white;
+        }
       }
 
       .swiper-slide-next,
       .swiper-slide-prev {
+        transition: all ease 3s;
+
         .carousel-item-img {
           &::after {
             background-color: rgba($color: $white, $alpha: 0.5) !important;
@@ -249,11 +260,11 @@
         justify-content: center;
         align-items: center;
 
-        transition: all ease 0.75s;
+        transition: all ease 1s;
 
         .carousel-item-img {
-          border-right: 10px solid $white;
-          border-left: 10px solid $white;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
 
           max-width: 1320px;
           width: 100%;
@@ -284,14 +295,12 @@
 
             background-color: transparent;
 
-            transition: all ease 0.75s;
+            transition: all ease 1s;
           }
 
           img {
-            width: 120%;
-
             transform: skewX(18deg);
-            transition: all ease 0.75s;
+            transition: all ease 1s;
           }
         }
       }
@@ -358,6 +367,41 @@
   }
 }
 // END RECRUITMENT
+
+// START CLIENT
+#home-client {
+  margin-top: 100px;
+
+  .main-title {
+    text-align: center;
+  }
+
+  .client-slide {
+    height: 100%;
+    margin-top: 50px;
+
+    .client-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: 100%;
+
+      padding: 0 15px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// END CLIENT
 
 // START RESPONSIVE
 @media (max-width: 1280px) {

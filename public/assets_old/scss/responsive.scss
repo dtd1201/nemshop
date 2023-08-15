@@ -31,20 +31,17 @@
 }
 @media (max-width: 992px) {
   #header {
-    .header-nav-mobile {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
-
-      background-color: $white;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .header-nav {
-      display: none;
+    .container {
+      .header-nav-mobile {
+        z-index: 10;
+        background-color: $white;
+        width: 45px;
+        display: block;
+        text-align: right;
+      }
+      .header-nav {
+        display: none;
+      }
     }
   }
   .sub-title {
@@ -69,6 +66,7 @@
           }
         }
       }
+
     }
   }
 }

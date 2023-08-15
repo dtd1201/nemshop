@@ -217,6 +217,26 @@
         </section>
         @endif
       <!-- END RECRUITMENT -->
+      @if($doi_tac && $doi_tac->childs->count()>0)
+      <section id="home-client">
+        <div class="container">
+          <h2 class="main-title">{{ $doi_tac->name }}</h2>
+          <article class="client-slide">
+            <div class="swiper swiper-no-swiping">
+              <div class="swiper-wrapper">
+                @foreach($doi_tac->childs()->where('active', 1)->orderBy('order')->get() as $item)
+                <div class="swiper-slide">
+                  <div class="client-item">
+                    <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
+                  </div>
+                </div>
+                @endforeach
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      @endif
     </main>
 @endsection
 @section('js')

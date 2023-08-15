@@ -177,6 +177,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- JS -->
     <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script>
         // ajax load form
         $(document).on('submit', "[data-ajax='submit']", function() {

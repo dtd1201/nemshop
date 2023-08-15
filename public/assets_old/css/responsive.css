@@ -65,6 +65,9 @@ main {
 .recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover {
   background-color: #000;
 }
+.recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover .recruitment-content-item-information .button {
+  color: #000;
+}
 .recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover path,
 .recruitment-content-wrapper .recruitment-content-container .recruitment-content-list .recruitment-content-item:hover rect {
   fill: #fff;
@@ -169,6 +172,51 @@ main {
 }
 #header .container .header-nav-mobile {
   display: none;
+}
+#header .container .close-button svg {
+  height: 24px;
+  width: 24px;
+}
+
+.nav-mobile {
+  position: absolute;
+  right: 0;
+  top: 69px;
+  z-index: 20;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: calc(100vh - 69px);
+}
+.nav-mobile .nav-mobile_show {
+  background: #fff;
+  height: 100%;
+  position: relative;
+  width: 80%;
+  max-width: 300px;
+  flex: 0 0 80%;
+  padding: 20px;
+}
+.nav-mobile .nav-mobile_fade {
+  background: #000;
+  width: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+.nav-mobile .nav-mobile_main {
+  flex-wrap: wrap;
+}
+.nav-mobile .nav-mobile_main a {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.nav-mobile .nav-mobile_hotline {
+  padding: 20px 0;
+}
+.nav-mobile .nav-mobile_hotline svg {
+  vertical-align: middle;
 }
 
 #footer {
@@ -286,17 +334,14 @@ main {
   }
 }
 @media (max-width: 992px) {
-  #header .header-nav-mobile {
-    position: fixed;
-    top: 0;
-    left: 0;
+  #header .container .header-nav-mobile {
     z-index: 10;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 45px;
+    display: block;
+    text-align: right;
   }
-  #header .header-nav {
+  #header .container .header-nav {
     display: none;
   }
   .sub-title {

@@ -34,7 +34,7 @@ class AdminLoginController extends Controller
             'password' => $request->password,
         ], $request->remember)) {
             //  return redirect()->intended('/admin');
-            return redirect()->intended('/admin');
+            return redirect()->intended('/admin/user');
         }
         // if unsuccessful, then redirect back to the login with the form data
         return redirect()->back()->withInput($request->only('email', 'remember'));
