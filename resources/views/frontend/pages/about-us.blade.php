@@ -14,6 +14,7 @@
         display: block;
     }
 </style>
+<div>aaaaa</div>
     <div class="content-wrapper">
         <div class="main">
             @include('frontend.components.breadcrumbs',[
